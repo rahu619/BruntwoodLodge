@@ -2461,8 +2461,10 @@ button.list-group-item-dark {
   list-style: none; }
 
 .nav-link {
-  display: block;
-  padding: 0.5rem 1rem; }
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+}
   .nav-link:focus, .nav-link:hover {
     text-decoration: none; }
   .nav-link.disabled {

@@ -50,3 +50,36 @@
     font-style: italic;
     font-size: medium;
 }
+
+.homepage-submit {
+    color: white;
+    background-color: black
+}
+
+
+
+
+/* unvisited link */
+a:link {
+    color: white ;
+}
+
+/* visited link */
+a:visited {
+    color: whitesmoke;
+}
+
+/* mouse over link */
+a:hover {
+    color: whitesmoke ;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+button:hover {
+color:gray ;
+cursor:pointer ;
+}
