@@ -11,6 +11,7 @@
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="style/theme.css">
+    <link rel="stylesheet" href="style/Custom.css">
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
     <script src="scripts/navbar-ontop.js"></script>
     <!-- Script: Animated entrance -->
@@ -20,8 +21,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><h3> Brundwood Lodge</h3></a>
-            <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>-->
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
@@ -39,9 +40,11 @@
         </div>
     </nav>
     <!-- Cover -->
-    <div class="py-5 photo-overlay cover d-flex align-items-center" style="background-image: url(&quot;assets/Main/cover_2.jpg&quot;); background-position: center bottom; background-size: cover;">
+    <div class="py-5 cover d-flex align-items-center" style="background-image: url(&quot;assets/Main/cover_2.jpg&quot;); background-position: center top ; background-size:cover  ;">
         <div class="container">
-            <div class="row"></div>
+            <span class="homepage-title">BRUNDWOOD LODGE</span>
+            <br />
+            <span class="homepage-title-bottom">Gardens</span>
         </div>
     </div>
     <!-- Article style section -->
@@ -50,18 +53,18 @@
             <div class="row pt-2">
                 <div class="align-self-center col-lg-5 text-md-left text-center">
                     <h2>Welcome to Brundwood Lodge</h2>
-                    <p class="my-4 text-muted" contenteditable="true">
-                        Come and stay with us in our peaceful B n B accommodation at Stewart Island Lodge. Private and secluded, Stewart Island Lodge is a wonderful place to relax in great comfort while providing a base for your island exploration.
+                    <p class="homepage-welcome-desc">
+                        Imagine a place so pristine, beautiful and peaceful that you will be immediately struck by the absolute silence and the sheer majesty of your surroundings. A land that time has forgotten, where you can truly relax and take in the splendour of native New Zealand bush,meadows and serene nature.
                         <br>
                     </p>
                     <a class="btn btn-primary btn-lg" href="#download">Book Now</a>
                 </div>
 
-                <div class="align-self-center col-lg-5 text-md-right text-center">
-                    <div id="map" style="width:400px;height:200px"></div>
-                    <div class="body-content">
-                        <h2>Where to find us in hamilton</h2>
-                        <p>
+                <div class="mapBody">
+                    <div id="map" class="mapBody-content"></div>
+                    <div class="mapBody-content" style="width:500px;height:200px">
+                        <h1 class="homepage-location-desc">Where to find us in hamilton</h1>
+                        <p class="homepage-location-desc">
                             "Brundwood Lodge is located at just outskirts of Hamilton cbd,and is easily accessible from Hamilton airport. "
                             <br />
                             <br />
@@ -81,13 +84,15 @@
     <!-- Features -->
     <div class="py-5" id="features">
         <div class="container">
+            <p class="homepage-welcome-desc">
+                Come and stay with us in our peaceful B n B accommodation at Stewart Island Lodge.
 
-            Come and stay with us in our peaceful B n B accommodation at Stewart Island Lodge.
+                Private and secluded, Stewart Island Lodge is a wonderful place to relax in great comfort while providing a base for your island exploration.
 
-            Private and secluded, Stewart Island Lodge is a wonderful place to relax in great comfort while providing a base for your island exploration.
+                The lodge has sweeping views of Halfmoon Bay and the ocean beyond. Its grounds are home to many native birds including kaka (native parrots).
 
-            The lodge has sweeping views of Halfmoon Bay and the ocean beyond. Its grounds are home to many native birds including kaka (native parrots).
-            <ul>
+            </p>
+            <ul class="homepage-welcome-desc">
                 <li>Accommodation in King/twin rooms, each with ensuite and bath</li>
                 <li>Extensive gardens</li>
                 <li>Bird watching</li>
@@ -95,23 +100,23 @@
                 <li>Communal guest lounge with great views over the bay</li>
                 <li>Five minutes walk to village and restaurants</li>
             </ul>
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
 
         </div>
     </div>
     <!-- Features -->
-    
+
     <div class="pb-1 section text-center" id="reviews">
         <div class="container">
             <hr>
             <div class="row pt-1">
                 <div class="col-md-12">
-                    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <img src="assets/Main/reviews_logo_1_dark.png" class="img-block mx-auto my-3 d-block" width="250" data-holder-rendered="true">
@@ -166,7 +171,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 mt-3 text-center">
-                    <p class="text-muted">© Copyright 2017 Pingendo - All rights reserved.</p>
+                    <p class="text-muted">© Copyright 2018 RJ - All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -179,9 +184,6 @@
     <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/Main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:110px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">
-        made with&nbsp;&nbsp;
-        <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-    </pingendo>
+
 </body>
 </html>
