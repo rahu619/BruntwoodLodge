@@ -1,0 +1,52 @@
+﻿.mapBody {
+    background-color: lightblue;
+    text-align: right;
+}
+
+.mapBody-content {
+    width: 500px;
+    height: 200px;
+    padding: 10px 10px 10px 10px
+}
+
+
+.homepage-title {
+    font-family: "Klinic","Open Sans",sans-serif;
+    font-weight:600 ;
+    color: white;
+    font-size:30px;
+    text-transform :uppercase;
+    line-height:1.28;
+    text-shadow:0 2px 5px rgba(0,0,0,0.7);
+    margin:0;
+    
+
+}
+
+.homepage-title-bottom {
+    font-family: "Klinic","Open Sans",sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 60px;
+    line-height: 1.28;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    margin: 0;
+    font-weight:400;
+}
+
+
+.homepage-welcome, .homepage-welcome-desc {
+    font-size: medium;
+    color: white;
+}
+
+.homepage-welcome {
+    text-decoration: underline;
+    text-align: left;
+}
+
+.homepage-location-desc {
+    color: black;
+    font-style: italic;
+    font-size: medium;
+}
