@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- PAGE settings -->
     <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
-    <title>Brundwood Lodge</title>
+    <title>The Bruntwood Lodge</title>
     <meta name="description" content="Free Bootstrap 4 Pingendo Elegant template made for app and softwares.">
     <meta name="keywords" content="Affordable lodge">
     <!-- CSS dependencies -->
@@ -17,14 +17,14 @@
     <!-- Script: Animated entrance -->
     <script src="scripts/animate-in.js"></script>
 </head>
-<body>
+<body data-spy="scroll"  data-offset="50">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" data-target=".navbar">
         <div class="container">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" >
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#Accomodation">Accomodation</a>
                     </li>
@@ -42,17 +42,17 @@
     <!-- Cover -->
     <div class="py-5 cover d-flex align-items-center" style="background-image: url(&quot;assets/Main/cover_2.jpg&quot;); background-position: center top ; background-size:cover  ;">
         <div class="container">
-            <span class="homepage-title">BRUNDWOOD LODGE</span>
+            <span class="homepage-title">BRUNTWOOD LODGE</span>
             <br />
             <span class="homepage-title-bottom">Gardens</span>
         </div>
     </div>
     <!-- Article style section -->
     <div class="py-1">
-        <div class="container">
+        <div class="container" id="About">
             <div class="row pt-2">
                 <div class="align-self-center col-lg-5 text-md-left text-center">
-                    <h2>Welcome to Brundwood Lodge</h2>
+                    <h2>Welcome to Bruntwood Lodge</h2>
                     <p class="homepage-welcome-desc">
                         Imagine a place so pristine, beautiful and peaceful that you will be immediately struck by the absolute silence and the sheer majesty of your surroundings. A land that time has forgotten, where you can truly relax and take in the splendour of native New Zealand bush,meadows and serene nature.
                         <br>
@@ -65,7 +65,7 @@
                     <div class="mapBody-content" style="width:500px;height:200px">
                         <h1 class="homepage-location-desc">Where to find us in hamilton</h1>
                         <p class="homepage-location-desc">
-                            "Brundwood Lodge is located at just outskirts of Hamilton cbd,and is easily accessible from Hamilton airport. "
+                            "Bruntwood Lodge is located at just outskirt of Hamilton cbd,and is easily accessible from Hamilton airport. "
                             <br />
                             <br />
                             The Lodge is just a short 5 minute drive from the nearby airport.
@@ -147,35 +147,58 @@
     </div>
 
     <!-- Footer -->
-    <div class="pt-5 bg-dark">
-        <div class="container">
+    <footer class="text-md-left text-center p-4 bg-dark text-light">
+        <div id="Contact" class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <p class="lead">Sign up to our newsletter for the latest news</p>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your e-mail here">
-                        </div>
-                        <button type="submit" class="btn ml-1 btn-outline-light">Subscribe</button>
+                <div class="my-3 col-lg-4 col-md-6">
+                    <h3>The Bruntwood Lodge</h3>
+                   
+                    <p class="my-3">
+                        <a href="https://goo.gl/maps/ayn28vkB5F92" target="blank" class="text-muted">
+                            Bruntwood Road,
+                            Tamahere,Cambridge, Hamilton
+                            <br>
+                        </a>
+                    </p>
+                  
+                </div>
+                <div class="my-3 col-lg-4 col-md-6">
+                    <h3>Contact us</h3>
+                    <form>
+                        <fieldset class="form-group my-3">
+                            <input type="email" class="form-control" id="Input Email" placeholder="Email">
+                        </fieldset>
+                        <fieldset class="form-group my-3">
+                            <input type="message" class="form-control" id="Input Message" placeholder="Message">
+                        </fieldset>
+                        <button type="submit" class="homepage-submit"> Submit</button>
                     </form>
                 </div>
-                <div class="col-4 col-md-1 align-self-center my-3">
-                    <a href="https://www.facebook.com" target="blank"><i class="fa fa-fw fa-facebook fa-3x text-white"></i></a>
+                <div class="col-lg-1">
+                    <a href="https://www.facebook.com" target="blank"></a>
+                    <a href="https://www.instagram.com" target="blank"></a>
+                    <a href="https://twitter.com" target="blank"></a>
+                    <a href="https://plus.google.com" target="blank"></a>
+                    <a href="https://pinterest.com" target="blank"></a>
+                    <a href="https://www.youtube.com" target="blank"></a>
                 </div>
-                <div class="col-4 col-md-1 align-self-center my-3">
-                    <a href="https://twitter.com" target="blank"><i class="fa fa-fw fa-twitter fa-3x text-white"></i></a>
-                </div>
-                <div class="col-4 col-md-1 align-self-center my-3">
-                    <a href="https://www.instagram.com" target="blank"><i class="fa fa-fw fa-instagram fa-3x text-white"></i></a>
+                <div class="my-3 col-lg-3">
+                    <h3>Follow</h3>
+                    <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+                    <a href="https://www.instagram.com" target="blank"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+                    <a href="https://twitter.com" target="blank"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+                    <a href="https://plus.google.com" target="blank"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+                    <a href="https://pinterest.com" target="blank"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+                    <a href="https://www.youtube.com" target="blank"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 mt-3 text-center">
-                    <p class="text-muted">© Copyright 2018 RJ - All rights reserved.</p>
+                <div class="col-md-12">
+                    <p class="text-muted">© Copyright 2018 RJ - All rights reserved. </p>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <!-- JavaScript dependencies -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
